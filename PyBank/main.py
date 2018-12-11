@@ -1,6 +1,7 @@
 #Import necessary libriaries
 import os
 import csv
+import sys
 #Define average function
 def average(list):
     return int(sum(list) / len(list))
@@ -48,11 +49,13 @@ with open(csvpath, newline='') as csvfile:
     min_index = diff.index(greatestDec)
     min_month = сsv_reader[min_index+1][0]
 
+    #sys.stdout= open('output.txt', 'w')
     print(f"Total Months:  {rowcount}")
     print(f"Total:  ${total}")
     print(f"Average Change:  ${totalaverage}")
     print(f"Greatest Increase in Profits: {max_month} (${greatestInc})")
     print(f"Greatest Decrease in Profits: {min_month} (${greatestDec})")
+
 
 
 

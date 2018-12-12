@@ -45,7 +45,7 @@ with open(csvpath, newline='') as csvfile:
     can3_percent = float(candidate3/ rowcount)
     can4_percent = float(candidate4/ rowcount)
 
-    #Printing out the results
+    #Uncomment the line below to export the results to txt file.
     #sys.stdout= open('output.txt', 'w')
     print("Election Results")
     print("-------------------------")

@@ -47,6 +47,7 @@ with open(csvpath, newline='') as csvfile:
     min_index = diff.index(greatestDec)
     min_month = сsv_reader[min_index+1][0]
 
+    #Uncomment the line below to export the results into txt file.
     #sys.stdout= open('output.txt', 'w')
     print(f"Total Months:  {rowcount}")
     print(f"Total:  ${total}")

@@ -10,8 +10,13 @@ with open(csvpath, newline='') as csvfile:
     # read the file
     csvreader = csv.reader(csvfile, delimiter = ',')
 
+    #To avoid from the 1st row (header)
     csv_header = next(csvreader)
+
+    #Convert the data to list
     csv_reader = list(csvreader)
+
+    #Calculate Total number of votes
     rowcount = int(len(csv_reader))
 
     #List of candidates who received votes
@@ -53,14 +58,3 @@ with open(csvpath, newline='') as csvfile:
     print("-------------------------")
     print("Winner: " + uniq_list[winner_index])
     print("-------------------------")
-
-
-
-
-
-
-
-
-
-
-

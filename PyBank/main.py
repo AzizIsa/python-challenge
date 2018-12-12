@@ -55,26 +55,3 @@ with open(csvpath, newline='') as csvfile:
     print(f"Average Change:  ${totalaverage}")
     print(f"Greatest Increase in Profits: {max_month} (${greatestInc})")
     print(f"Greatest Decrease in Profits: {min_month} (${greatestDec})")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

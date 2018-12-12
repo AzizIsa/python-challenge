@@ -23,7 +23,6 @@ with open(csvpath, newline='') as csvfile:
     #Calculate the total number of months included in the dataset
     rowcount = len(сsv_reader)
 
-
     #Empty list to place data of the differences of each row.
     change=[]
 
@@ -33,7 +32,6 @@ with open(csvpath, newline='') as csvfile:
        total = total + int(row[1])
        change.append(int(row[1]))
 
-
     #Calculate the average change in "Profit/Losses" between months over the entire period
     diff = [change[i]-change[i-1] for i in range(1,len(change))]
 
@@ -42,7 +40,7 @@ with open(csvpath, newline='') as csvfile:
     greatestInc= max(diff)
     greatestDec = min(diff)
 
-    #Find
+    #Find months of max & min values
     max_index = diff.index(greatestInc)
     max_month = сsv_reader[max_index+1][0]
 

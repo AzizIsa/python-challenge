@@ -40,7 +40,7 @@ with open(csvpath, newline='') as csvfile:
     greatestInc= max(diff)
     greatestDec = min(diff)
 
-    #Find months of max & min values
+    #Find months of max & min values.
     max_index = diff.index(greatestInc)
     max_month = сsv_reader[max_index+1][0]
 
